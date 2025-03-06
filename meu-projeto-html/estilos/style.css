@@ -1,0 +1,31 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.corpo {
+    background-color: rgb(15, 226, 110);
+    display: flex;
+    margin: auto;
+    width: 540px;
+    height: 540px;
+
+    & .cabecalho {
+        display: inline-block;
+        color: #fff;
+        margin: auto;
+    }
+
+    & .etiqueta .mes {
+        background-color: rgb(238, 27, 36);
+        border-radius: 15px 5px;
+        font-size: 2em;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    & .etiqueta p {
+        font-size: 1em;
+    }
+}
