@@ -2,30 +2,97 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .corpo {
-    background-color: rgb(15, 226, 110);
+    background-color: #000;
     display: flex;
-    margin: auto;
+    margin: 5px auto;
     width: 540px;
-    height: 540px;
+    height: 730px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
 
     & .cabecalho {
         display: inline-block;
         color: #fff;
-        margin: auto;
+        margin: 0 auto;
+        justify-content: flex-end;
     }
-
-    & .etiqueta .mes {
-        background-color: rgb(238, 27, 36);
-        border-radius: 15px 5px;
+    & .etiqueta {
+        display: flex;
+        justify-content: flex-end;
+        /*background-image: linear-gradient(to bottom, #5F9D54, #fff);*/
+    }
+    & .mes {
+        /*background-color: #ee1b24;*/
+        padding: 20px;
+        border-radius: 20px 5px;
+        font-weight: bold;
+    }
+  
+    & .tel {
+        padding: 20px;
+        color: #fff;
+        margin: auto 40px;
+        border-radius: 5px;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+    & .logo {
+        /*background-color: #5F9D54;*/
+        color: #5F9D54;
         font-size: 2em;
-        margin: 10px auto;
-        padding: 10px;
+        text-align: center;
+        padding: 5px;
+        border-radius: 5px 5px 0 0;
+        margin: 0 auto 0 auto;
+        text-shadow: 0.05em 0.05em #fff;
+        font-weight: bold;
     }
-
-    & .etiqueta p {
-        font-size: 1em;
+    & .parcela {
+        margin: 5px 0;
+        background-color: #fff;
+        font-weight: bold;
+        font-size: 1.5em;
+        color: rgb(238, 27, 36);
+        text-shadow: 0.05em 0.05em #fff;
+        padding: 5px;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 1px solid;
+    }
+    & .valor {
+        display: flex;
+        justify-content: flex-end;
+    }
+    & .valor1 {
+        background-color: #fff;
+        margin: 5px 2px;
+        color: #000;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    & .valor h2 {
+        color: rgb(238, 27, 36);
+    }
+    & .bateria {
+        background-color: rgb(238, 27, 36);
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    & .informativo {
+        margin: auto;
+        background-color: black;
+        border-radius: 5px;
+        margin: 5px 0;
+        padding: 20px;
+        font-size: .7em;
+        text-align: center;
+        line-height: 1.5;
     }
 }
